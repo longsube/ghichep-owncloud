@@ -7,8 +7,8 @@ Server mới sử dụng OS Ubuntu 16.04, cài đặt Owncloud 7.0.4 (giống se
 
 7.0.4 -> 7.0.15 -> 8.0.16 -> 8.1.12 -> 8.2.11 -> 9.0.10 -> 9.1.6 -> 10.0.4
 
-## 1. Cài đặt OwnCloud 7.0.4 trên Ubuntu 16.04
-### 1.1. Cài đặt repo để cài đặt php5.6 và các package liên quan (phiên bản php cho owncloud 7.0.4)
+## 1. Cài đặt OwnCloud 7.0.4 trên Server mới và migrate data từ Server cũ
+### 1.1. Cài đặt repo để cài đặt php5.6 và các package liên quan (phiên bản php yêu cầu cho owncloud 7.0.4)
 ```sh
 apt-get install software-properties-common -y
 add-apt-repository ppa:ondrej/php

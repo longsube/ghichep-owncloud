@@ -60,10 +60,10 @@ $CONFIG = array (
   'secret' => 'e017c98424ba8bf28841e8aaeb4fe03372f4ea86a210b23a415a708d7eaa06df8bc168ecdf522ba22208b33c0b5e274e',
   'trusted_domains' =>
   array (
-    0 => '123.30.212.230',
+    0 => 'ip_address',
   ),
   'datadirectory' => '/var/www/owncloud/data',
-  'overwrite.cli.url' => 'http://123.30.212.230/owncloud',
+  'overwrite.cli.url' => 'http://ip_address/owncloud',
   'dbtype' => 'sqlite3',
   'version' => '7.0.4.2',
   'installed' => true,

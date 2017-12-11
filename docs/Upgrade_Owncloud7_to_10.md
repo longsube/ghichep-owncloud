@@ -1,10 +1,11 @@
-# Hướng dẫn migrate và upgrade Owncloud tù 7.0.4 -> 10.0.4
+# Hướng dẫn migrate và upgrade Owncloud từ 7.0.4 -> 10.0.4
 ## Đầu bài:
 Server cũ sử dụng OS Ubuntu 12.04 đang chạy Owncloud phiên bản 7.0.4. Yêu cầu dựng 1 hệ thống Owncloud mới, với phiên bản mới nhất, và di chuyển các dữ liệu từ hệ thống cũ sang, toàn bộ user, quyền đều phải được giữ nguyên.
 
 ## Giải pháp:
 Server mới sử dụng OS Ubuntu 16.04, cài đặt Owncloud 7.0.4 (giống server cũ), sau khi migrate data từ server cũ sang, sẽ tiến hành upgrade phiên bản theo lộ trình như sau:
-7.0.4 -> latest 7.0.x -> latest 8.0.x -> latest 8.1.x -> latest 8.2.x -> latest 9.0.x -> latest 9.1.x
+
+7.0.4 -> 7.0.15 -> 8.0.16 -> 8.1.12 -> 8.2.11 -> 9.0.10 -> 9.1.6 -> 10.0.4
 
 ## 1. Cài đặt OwnCloud 7.0.4 trên Ubuntu 16.04
 ### 1.1. Cài đặt repo để cài đặt php5.6 và các package liên quan (phiên bản php cho owncloud 7.0.4)
@@ -71,7 +72,9 @@ $CONFIG = array (
 
 ## 2. Upgrade Server Owncloud mới từ 7.0.4 lên 10.0.4
 Việc upgrade được thực hiện theo lộ trình sau:
-7.0.4 -> latest 7.0.x -> latest 8.0.x -> latest 8.1.x -> latest 8.2.x -> latest 9.0.x -> latest 9.1.x
+
+7.0.4 -> 7.0.15 -> 8.0.16 -> 8.1.12 -> 8.2.11 -> 9.0.10 -> 9.1.6 -> 10.0.4
+
 Hướng dẫn sau sẽ hướng dẫn việc upgrade từ 7.0.4 -> 8.0.16, các phiên bản kế tiếp thực hiện tương tự
 
 ### 2.1 Stop dịch vụ apche2
